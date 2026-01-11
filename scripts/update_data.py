@@ -1,9 +1,10 @@
+import os
 import json
 import requests
 
 # 示例：你可以根据需要修改下面的新闻源（如RSS、API）
-NEWS_API_URL = "https://newsapi.org/v2/top-headlines"
-API_KEY = "f967c4d75a4245aba15be54574d36d6e"  # 需要替换为你的 API 密钥
+NEWS_API_URL = "f967c4d75a4245aba15be54574d36d6e"
+API_KEY = "your_api_key"  # 需要替换为你的 API 密钥
 
 def fetch_news():
     response = requests.get(NEWS_API_URL, params={
@@ -14,7 +15,10 @@ def fetch_news():
     return response.json()
 
 def save_news(news_data):
-    with open('../data/items.json', 'w', encoding='utf-8') as f:
+    # 使用绝对路径而不是相对路径
+    file_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'items.json')
+    
+    with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(news_data, f, ensure_ascii=False, indent=4)
 
 def main():
