@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yu News Hub</title>
+  <meta name="description" content="个人聚合新闻热点：大媒体 + 汽车/电动化 + AI + 宏观/投资 + 科学。支持已读/收藏/搜索，本地保存。" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Yu News Hub</h1>
+          <div class="sub" id="metaLine">加载中…</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <span class="badge">快捷键 <span class="kbd">/</span> 搜索</span>
+        <button class="btn ghost" id="btnReset">重置</button>
+      </div>
+    </div>
+
+    <div class="panel controls">
+      <div class="row">
+        <input class="input" id="q" placeholder="搜索标题/摘要/来源/标签…" />
+        <select class="select" id="category">
+          <option value="all">全部分类</option>
+          <option value="大媒体">大媒体</option>
+          <option value="汽车">汽车</option>
+          <option value="电动化">电动化</option>
+          <option value="充电">充电</option>
+          <option value="AI">AI</option>
+          <option value="宏观经济">宏观经济</option>
+          <option value="投资">投资</option>
+          <option value="科学">科学</option>
+        </select>
+        <select class="select" id="region">
+          <option value="mix">中国60% + 全球40%</option>
+          <option value="all">全部地区</option>
+          <option value="CN">仅中国</option>
+          <option value="Global">仅全球</option>
+        </select>
+        <select class="select" id="sort">
+          <option value="hot">按热度</option>
+          <option value="new">按时间</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <button class="btn primary" id="btnRefresh">刷新</button>
+        <button class="btn" id="btnUnread">只看未读</button>
+        <button class="btn" id="btnStarred">只看收藏</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel section">
+        <h2>热点 Top 10</h2>
+        <div id="topics"></div>
+      </div>
+
+      <div class="panel section">
+        <h2>最新文章</h2>
+        <div class="list" id="list"></div>
+        <div class="footer" id="footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
