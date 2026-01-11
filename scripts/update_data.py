@@ -13,7 +13,13 @@ def fetch_news():
         'category': 'technology',  # 可选：'business', 'technology', 'sports', 等
     })
     return response.json()
-
+    response = requests.get(NEWS_API_URL, params={
+        'apiKey': API_KEY,
+        'country': 'us',  # 选择国家，如 'us' 或 'cn'
+        'category': 'technology',  # 可选：'business', 'technology', 'sports', 等
+    })
+    print(response.json())  # 打印返回的新闻数据，检查是否正常
+    return response.json()
 def save_news(news_data):
     # 使用绝对路径而不是相对路径
     file_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'items.json')
