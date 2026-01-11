@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "defaults": {
+    "mix_cn_ratio": 0.6,
+    "max_items_per_feed": 40,
+    "max_age_days": 7
+  },
+  "feeds": [
+    {
+      "id": "reuters_news_sitemap",
+      "name": "Reuters · News Sitemap",
+      "url": "https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml",
+      "type": "reuters_news_sitemap_index",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "大媒体",
+        "全球",
+        "宏观经济",
+        "投资",
+        "汽车"
+      ],
+      "weight": 1.35
+    },
+    {
+      "id": "bbc_world",
+      "name": "BBC · World",
+      "url": "http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/world/rss.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "大媒体",
+        "全球"
+      ],
+      "weight": 1.1
+    },
+    {
+      "id": "bbc_business",
+      "name": "BBC · Business",
+      "url": "http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/business/rss.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "大媒体",
+        "宏观经济",
+        "投资"
+      ],
+      "weight": 1.05
+    },
+    {
+      "id": "bbc_tech",
+      "name": "BBC · Technology",
+      "url": "http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/technology/rss.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "大媒体",
+        "AI",
+        "科技"
+      ],
+      "weight": 1.0
+    },
+    {
+      "id": "guardian_world",
+      "name": "The Guardian · World",
+      "url": "https://www.theguardian.com/world/rss",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "大媒体",
+        "全球"
+      ],
+      "weight": 1.0
+    },
+    {
+      "id": "guardian_business",
+      "name": "The Guardian · Business",
+      "url": "https://www.theguardian.com/business/rss",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "宏观经济",
+        "投资"
+      ],
+      "weight": 0.95
+    },
+    {
+      "id": "guardian_technology",
+      "name": "The Guardian · Technology",
+      "url": "https://www.theguardian.com/uk/technology/rss",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "AI",
+        "科技"
+      ],
+      "weight": 0.9
+    },
+    {
+      "id": "openai_news",
+      "name": "OpenAI · News",
+      "url": "https://openai.com/news/rss.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "AI",
+        "科技"
+      ],
+      "weight": 1.1
+    },
+    {
+      "id": "mit_news",
+      "name": "MIT News · Latest",
+      "url": "https://news.mit.edu/rss/feed",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "AI",
+        "科学",
+        "科技"
+      ],
+      "weight": 0.9
+    },
+    {
+      "id": "nasa_breaking",
+      "name": "NASA · Breaking News",
+      "url": "http://www.nasa.gov/rss/breaking_news.rss",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "科学"
+      ],
+      "weight": 0.85
+    },
+    {
+      "id": "arxiv_cs_ai",
+      "name": "arXiv · cs.AI",
+      "url": "https://export.arxiv.org/rss/cs.AI",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "AI",
+        "科学"
+      ],
+      "weight": 0.8
+    },
+    {
+      "id": "fed_press_all",
+      "name": "Federal Reserve · Press Releases (All)",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "宏观经济",
+        "投资"
+      ],
+      "weight": 1.0
+    },
+    {
+      "id": "fed_monetary",
+      "name": "Federal Reserve · Monetary Policy",
+      "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "宏观经济",
+        "投资"
+      ],
+      "weight": 0.95
+    },
+    {
+      "id": "sec_press",
+      "name": "SEC · Press Releases",
+      "url": "https://www.sec.gov/rss/press.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "投资",
+        "监管"
+      ],
+      "weight": 0.9
+    },
+    {
+      "id": "sec_speeches",
+      "name": "SEC · Speeches & Statements",
+      "url": "https://www.sec.gov/rss/speeches.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "投资",
+        "监管"
+      ],
+      "weight": 0.85
+    },
+    {
+      "id": "sec_litigation",
+      "name": "SEC · Litigation Releases",
+      "url": "https://www.sec.gov/rss/litigation.xml",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "投资",
+        "监管"
+      ],
+      "weight": 0.85
+    },
+    {
+      "id": "xinhua_politics",
+      "name": "新华网 · 时政",
+      "url": "http://www.xinhuanet.com/politics/news_politics.xml",
+      "type": "rss",
+      "region": "CN",
+      "lang": "zh",
+      "tags": [
+        "中国",
+        "大媒体",
+        "宏观经济",
+        "政策"
+      ],
+      "weight": 1.1
+    },
+    {
+      "id": "xinhua_world",
+      "name": "新华网 · 国际",
+      "url": "http://www.xinhuanet.com/world/news_world.xml",
+      "type": "rss",
+      "region": "CN",
+      "lang": "zh",
+      "tags": [
+        "中国",
+        "全球",
+        "大媒体"
+      ],
+      "weight": 1.0
+    },
+    {
+      "id": "xinhua_finance",
+      "name": "新华网 · 金融",
+      "url": "http://www.xinhuanet.com/finance/news_finance.xml",
+      "type": "rss",
+      "region": "CN",
+      "lang": "zh",
+      "tags": [
+        "中国",
+        "宏观经济",
+        "投资",
+        "大媒体"
+      ],
+      "weight": 1.2
+    },
+    {
+      "id": "xinhua_tech",
+      "name": "新华网 · 科技",
+      "url": "http://www.xinhuanet.com/tech/news_tech.xml",
+      "type": "rss",
+      "region": "CN",
+      "lang": "zh",
+      "tags": [
+        "中国",
+        "AI",
+        "科技",
+        "大媒体"
+      ],
+      "weight": 1.05
+    },
+    {
+      "id": "xinhua_energy",
+      "name": "新华网 · 能源",
+      "url": "http://www.xinhuanet.com/energy/news_energy.xml",
+      "type": "rss",
+      "region": "CN",
+      "lang": "zh",
+      "tags": [
+        "中国",
+        "能源",
+        "宏观经济",
+        "大媒体"
+      ],
+      "weight": 1.05
+    },
+    {
+      "id": "xinhua_auto",
+      "name": "新华网 · 汽车",
+      "url": "http://www.xinhuanet.com/auto/news_auto.xml",
+      "type": "rss",
+      "region": "CN",
+      "lang": "zh",
+      "tags": [
+        "中国",
+        "汽车",
+        "电动化",
+        "大媒体"
+      ],
+      "weight": 1.15
+    },
+    {
+      "id": "nbs_release_cn",
+      "name": "国家统计局 · 最新发布",
+      "url": "https://www.stats.gov.cn/sj/zxfb/rss",
+      "type": "rss",
+      "region": "CN",
+      "lang": "zh",
+      "tags": [
+        "中国",
+        "宏观经济",
+        "数据",
+        "官方"
+      ],
+      "weight": 1.25
+    },
+    {
+      "id": "nbs_release_en",
+      "name": "NBS · Press Release (EN)",
+      "url": "http://www.stats.gov.cn/english/PressRelease/rss.xml",
+      "type": "rss",
+      "region": "CN",
+      "lang": "en",
+      "tags": [
+        "中国",
+        "宏观经济",
+        "数据",
+        "官方"
+      ],
+      "weight": 0.85
+    },
+    {
+      "id": "insideevs_news",
+      "name": "InsideEVs · News",
+      "url": "https://insideevs.com/rss/category/news/",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "汽车",
+        "电动化"
+      ],
+      "weight": 0.95
+    },
+    {
+      "id": "insideevs_charging",
+      "name": "InsideEVs · Charging",
+      "url": "https://insideevs.com/rss/category/charging/",
+      "type": "rss",
+      "region": "Global",
+      "lang": "en",
+      "tags": [
+        "充电",
+        "电动化",
+        "技术"
+      ],
+      "weight": 0.95
+    }
+  ]
+}

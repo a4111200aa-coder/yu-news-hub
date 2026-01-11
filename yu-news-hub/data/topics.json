@@ -1,0 +1,16 @@
+[
+  {
+    "id": "t1",
+    "headline": "示例热点：电动汽车充电与新标准动态",
+    "count": 3,
+    "sources": [
+      "新华网 · 汽车",
+      "Reuters · News Sitemap"
+    ],
+    "items": [
+      "sample1",
+      "sample2"
+    ],
+    "score": 1.23
+  }
+]
