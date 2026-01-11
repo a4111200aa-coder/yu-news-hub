@@ -3,8 +3,8 @@ import json
 import requests
 
 # 示例：你可以根据需要修改下面的新闻源（如RSS、API）
-NEWS_API_URL = "f967c4d75a4245aba15be54574d36d6e"
-API_KEY = "your_api_key"  # 需要替换为你的 API 密钥
+NEWS_API_URL = "NEWS_API_URL = "https://newsapi.org/v2/top-headlines"
+API_KEY = "f967c4d75a4245aba15be54574d36d6e"  # 需要替换为你的 API 密钥
 
 def fetch_news():
     response = requests.get(NEWS_API_URL, params={
